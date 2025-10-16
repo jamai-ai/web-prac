@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+/* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-signup {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* MAIN */
+.main-content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.pricing-header p {
+  color: #666;
+  margin-top: 8px;
+}
+
+.toggle-buttons {
+  margin-top: 20px;
+}
+
+.toggle-buttons button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-buttons .active {
+  background-color: #e5e5e5;
+}
+
+/* PRICING CARDS */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card ul {
+  list-style-type: disc;
+  margin: 20px 0 30px 20px;
+}
+
+.select-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* FAQ SECTION */
+.faq-section {
+  margin-top: 80px;
+  text-align: left;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: #555;
+  margin-left: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #fafafa;
+  padding: 40px 60px;
+  margin-top: 80px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+}
+
+.footer-columns a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.socials img:hover {
+  opacity: 1;
+}
+
+/* ===========================
+   📱 RESPONSIVE DESIGN
+=========================== */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .pricing-cards {
+    gap: 20px;
+  }
+
+  .footer-columns {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .pricing-header h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .faq-section {
+    padding: 0 15px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .pricing-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .toggle-buttons button {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-columns {
+    gap: 20px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
