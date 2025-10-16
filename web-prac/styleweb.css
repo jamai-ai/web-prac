@@ -84,7 +84,7 @@ body {
 }
 
 .section.reverse {
-  flex-direction: row-reverse;
+  flex-direction: reverse;
 }
 
 .section .text {
